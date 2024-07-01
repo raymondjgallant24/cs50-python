@@ -1,11 +1,8 @@
-#Take user name as input 
-name = input("What's your name? ").title().strip()
+def main():
+    name = input("What's your name? ")
+    hello()
 
-#SPLIT USERS NAME INTO FIRST NAME AND LASTNAME 
-first, last = name.split()
+def hello():
+    print("hello,", to)
 
-#Greet the user using format string
-print(f"Hello, {first}")
-
-
-
+main()
