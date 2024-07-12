@@ -1,7 +1,5 @@
-name = input("What's your name? ")
+with open("names.txt", "r") as file:
+    lines = file.readlines()
 
-file = open("names.txt", "a") #"w" recreates the file everytime "a" will append to the bottom of the file
-
-file.write(name)
-file.close()
-
+for line in lines:
+    print("hello,", line, end="") 
