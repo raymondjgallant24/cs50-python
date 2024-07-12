@@ -1,10 +1,11 @@
 def main():
-    name = input("What's your name? ").strip().capitalize()
-    hello(name)
-    return name
+    name = input("What's your name? ")
+    print(hello(name))
+    
 
 
 def hello(name):
-    print(f"hello, {name}")
+    return f"hello, {name}"
 
-main()
+if __name__ == "__main__":
+    main()
